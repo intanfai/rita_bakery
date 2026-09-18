@@ -7,4 +7,13 @@ const api = axios.create({
   },
 })
 
+// Interceptor: sebelum request dikirim, cek ada token admin tersimpan atau nggak
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('admin_token')
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`
+  }
+  return config
+})
+
 export default api

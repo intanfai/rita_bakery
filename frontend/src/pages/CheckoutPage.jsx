@@ -73,8 +73,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Checkout</h1>
-
+<h1 className="font-display text-2xl font-semibold text-[#2B1810] mb-6">Checkout</h1>
       <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm p-6 space-y-5">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
@@ -149,7 +148,7 @@ export default function CheckoutPage() {
         <button
           type="submit"
           disabled={submitting}
-          className="w-full bg-amber-800 text-white py-3 rounded-lg font-medium disabled:opacity-50"
+          className="w-full bg-brand-600 text-white py-3 rounded-lg font-medium disabled:opacity-50"
         >
           {submitting ? 'Memproses...' : 'Buat Pesanan'}
         </button>

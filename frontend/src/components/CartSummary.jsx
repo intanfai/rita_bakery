@@ -27,7 +27,7 @@ export default function CartSummary({ onCheckout }) {
       <button
         onClick={onCheckout}
         disabled={totalItems === 0}
-        className="w-full mt-6 bg-amber-800 text-white py-3 rounded-lg font-medium disabled:opacity-40 disabled:cursor-not-allowed"
+        className="w-full mt-6 bg-brand-600 text-white py-3 rounded-lg font-medium disabled:opacity-40 disabled:cursor-not-allowed"
       >
         Lanjut ke Checkout
       </button>

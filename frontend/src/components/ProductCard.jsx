@@ -18,7 +18,7 @@ export default function ProductCard({ product }) {
         className="w-full h-40 object-cover"
       />
       <div className="p-4">
-        <p className="text-xs text-amber-700 mb-1">{product.category.name}</p>
+        <p className="text-xs text-brand-600 mb-1">{product.category.name}</p>
         <h3 className="font-semibold text-gray-900">{product.name}</h3>
         <p className="text-gray-700 mt-1">{formattedPrice}</p>
         {!product.is_available && (

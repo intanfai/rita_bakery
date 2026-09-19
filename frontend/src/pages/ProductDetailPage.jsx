@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <Link to="/catalog" className="text-sm text-amber-700 hover:underline">
+      <Link to="/catalog" className="text-sm text-brand-600 hover:underline">
         ← Kembali ke katalog
       </Link>
 
@@ -78,7 +78,7 @@ export default function ProductDetailPage() {
                   <button
                     key={variant.id}
                     onClick={() => setSelectedVariant(variant)}
-                    className={`px-4 py-2 rounded-lg border text-sm ${selectedVariant?.id === variant.id ? "border-amber-700 bg-amber-50 text-amber-800" : "border-gray-300 text-gray-700"}`}
+                    className={`px-4 py-2 rounded-lg border text-sm ${selectedVariant?.id === variant.id ? "border-brand-600 bg-brand-50 text-brand-600" : "border-gray-300 text-gray-700"}`}
                   >
                     {variant.variant_name}
                     {Number(variant.extra_price) > 0 && ` (+${formatRupiah(variant.extra_price)})`}
@@ -106,7 +106,7 @@ export default function ProductDetailPage() {
             <textarea value={customNote} onChange={(e) => setCustomNote(e.target.value)} placeholder="Misal: tulis 'Happy Birthday Sarah' di atas kue" className="w-full border rounded-lg px-4 py-2 text-sm" rows={2} />
           </div>
 
-          <button onClick={handleAddToCart} disabled={!product.is_available} className="w-full mt-6 bg-amber-800 text-white py-3 rounded-lg font-medium disabled:opacity-40 disabled:cursor-not-allowed">
+          <button onClick={handleAddToCart} disabled={!product.is_available} className="w-full mt-6 bg-brand-600 text-white py-3 rounded-lg font-medium disabled:opacity-40 disabled:cursor-not-allowed">
             Tambah ke Keranjang — {formatRupiah(totalPrice)}
           </button>
         </div>

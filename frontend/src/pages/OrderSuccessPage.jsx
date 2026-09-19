@@ -19,8 +19,7 @@ export default function OrderSuccessPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-16 text-center">
       <div className="text-5xl mb-4">🎉</div>
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">Pesanan Berhasil Dibuat!</h1>
-      <p className="text-gray-600 mb-8">
+<h1 className="font-display text-2xl font-semibold text-[#2B1810] mb-2">Pesanan Berhasil Dibuat!</h1>      <p className="text-gray-600 mb-8">
         Terima kasih, {order.customer_name}. Pesanan kamu sedang kami proses.
       </p>
 
@@ -47,7 +46,7 @@ export default function OrderSuccessPage() {
 
       <Link
         to="/catalog"
-        className="inline-block mt-8 text-amber-800 font-medium hover:underline"
+        className="inline-block mt-8 text-brand-600 font-medium hover:underline"
       >
         ← Kembali belanja
       </Link>

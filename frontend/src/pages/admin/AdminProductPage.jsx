@@ -39,13 +39,12 @@ export default function AdminProductPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Kelola Produk</h1>
-        <button
+<h1 className="font-display text-2xl font-semibold text-[#2B1810]">Kelola Produk</h1>        <button
           onClick={() => {
             setEditingProduct(null)
             setShowForm(true)
           }}
-          className="bg-amber-800 text-white px-4 py-2 rounded-lg text-sm font-medium"
+          className="bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-medium"
         >
           + Tambah Produk
         </button>
@@ -83,7 +82,7 @@ export default function AdminProductPage() {
                   setEditingProduct(product)
                   setShowForm(true)
                 }}
-                className="text-amber-700 hover:underline"
+                className="text-brand-600 hover:underline"
               >
                 Edit
               </button>

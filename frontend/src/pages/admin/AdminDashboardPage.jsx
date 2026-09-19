@@ -48,8 +48,7 @@ export default function AdminDashboardPage() {
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold">Dashboard Pesanan</h1>
-          <p className="text-sm text-gray-500">Halo, {admin.name}</p>
+<h1 className="font-display text-2xl font-semibold text-[#2B1810]">Dashboard Pesanan</h1>          <p className="text-sm text-gray-500">Halo, {admin.name}</p>
         </div>
         <button onClick={logout} className="text-sm text-red-600 hover:underline">
           Logout

@@ -27,8 +27,7 @@ export default function AdminLoginPage() {
 
   return (
     <div className="max-w-sm mx-auto px-4 py-16">
-      <h1 className="text-2xl font-bold mb-6 text-center">Login Admin</h1>
-
+<h1 className="font-display text-2xl font-semibold text-[#2B1810] mb-6 text-center">Login Admin</h1>
       <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm p-6 space-y-4">
         {error && (
           <p className="text-sm text-red-600 bg-red-50 rounded-lg px-3 py-2">{error}</p>
@@ -57,7 +56,7 @@ export default function AdminLoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-amber-800 text-white py-2.5 rounded-lg font-medium disabled:opacity-50"
+          className="w-full bg-brand-600 text-white py-2.5 rounded-lg font-medium disabled:opacity-50"
         >
           {loading ? 'Memproses...' : 'Login'}
         </button>

@@ -6,7 +6,7 @@ export default function Navbar() {
   const { totalItems } = useCart()
 
   const linkClass = ({ isActive }) =>
-    `text-sm ${isActive ? 'text-brand-600 font-medium' : 'text-gray-700 hover:text-amber-800'}`
+    `text-sm ${isActive ? 'text-brand-600 font-medium' : 'text-gray-700 hover:text-brand-600'}`
 
   return (
     <nav className="bg-mallow border-b border-hairline sticky top-0 z-10">
@@ -15,7 +15,7 @@ export default function Navbar() {
           Rita Bakery
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 ">
           <NavLink to="/catalog" className={linkClass}>
             Katalog
           </NavLink>

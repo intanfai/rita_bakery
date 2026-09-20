@@ -14,8 +14,7 @@ class ProductFactory extends Factory
             'name' => fake()->randomElement(['Black Forest', 'Red Velvet', 'Tiramisu', 'Cheesecake', 'Choco Lava', 'Nastar', 'Kastengel', 'Cupcake Vanilla']) . ' ' . fake()->numberBetween(1, 100),
             'description' => fake()->sentence(10),
             'price' => fake()->numberBetween(15, 150) * 1000, // 15rb - 150rb
-            'image_url' => 'https://placehold.co/400x300',
-            'stock' => fake()->numberBetween(0, 50),
+'image_url' => 'https://picsum.photos/seed/' . fake()->numberBetween(1, 500) . '/400/300',            'stock' => fake()->numberBetween(0, 50),
             'is_available' => fake()->boolean(85), // 85% kemungkinan true
         ];
     }

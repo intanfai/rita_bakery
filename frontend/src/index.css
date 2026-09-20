@@ -27,3 +27,12 @@ body {
   border-top-right-radius: 50%;
   overflow: hidden;
 }
+
+.blob-frame {
+  border-radius: 62% 38% 55% 45% / 55% 45% 55% 45%;
+  overflow: hidden;
+}
+
+.blob-sm {
+  border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%;
+}
